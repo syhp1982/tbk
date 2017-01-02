@@ -1,0 +1,22 @@
+<extend name="Public:main" />
+<block name="main">
+<form action="{:U('User/user_pic',array('id'=>$data['id']))}" enctype="multipart/form-data" method="post" class="J_ajaxForm">
+	<div class="table_list">
+		<tr>
+			<td><input type="hidden" name="id" value="{$data.id}"> <input type="file" name="photo" /></td>
+		</tr>
+		<tr>
+			<td><input type='hidden' name='Dj_Thumb' id='thumb' value="{$data.Dj_Thumb|default=''}"> <if condition="empty($data['Dj_Prepared_Images'])">
+				<p>
+				<h3>请上传照片</h3>
+				</p>
+				<else /> <a href="{:($data['Dj_Prepared_Images'])}" target="_blank"><img src="{:($data['Dj_Prepared_Images'])}" id='thumb_preview' width='750'
+					height='350' style='cursor: hand' /></a> </if></td>
+		</tr>
+	</div>
+	<div class="btn_wrap" style="z-index: 999; text-align: center;">
+		<div class="btn_wrap_pd">
+			<input type="submit" value="提交">
+		</div>
+</form>
+</block>

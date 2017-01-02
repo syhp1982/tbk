@@ -1,0 +1,15 @@
+<extend name="Zgp/main" />
+<block name="header"> <include file="Zgp:header" /> </block>
+<block name="menu">
+<div class="adminmenumain">
+	<div id="adminmenuwrap">
+		<ul id="adminmenu">
+			<foreach name="menu" item="menu">
+			<li class="menu-top">
+			<a class="menu-top"><div class="wp-menu-name">{$menu.label}</div></a></li>
+			</foreach>
+		</ul>
+	</div>
+</div>
+</block>
+<block name="footer"> <include file="Zgp:footer" /> </block>

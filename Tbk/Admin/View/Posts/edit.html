@@ -1,0 +1,76 @@
+<extend name="Public:main" />
+<block name="main">
+<h1 class="page-header">{$page_title}</h1>
+<form method="post" action="{:U('Posts/doedit',array('ID'=>$posts[id]))}" enctype="multipart/form-data">
+	<div class="row">
+		<div class="col-sm-8">
+			<div class="form-group">
+				<label for="mailname" class="col-sm-2 control-label">栏目</label>
+				<foreach name="nav" item="nav"> <label for="mailname" class="checkbox-inline"> <input type="checkbox" id="inlineCheckbox1" value="$nav.id">
+					{$nav.label}
+				</label> </foreach>
+			</div>
+			<div class="form-group">
+				<label for="post_title" class="col-sm-2 control-label">标题</label>
+				<div class="col-sm-10">
+					<input type="text" placeholder="标题" class="form-control" id="post_title" name="post_title" required value="{$posts.post_title}" />
+				</div>
+			</div>
+			<div class="form-group">
+				<label for="post_date" class="col-sm-2 control-label">发布时间</label>
+				<div class="col-sm-10">
+					<input type="text" placeholder="发布时间" class="form-control" id="post_date" name="post_date" readonly value="{$posts.post_date}"/>
+				</div>
+			</div>
+			
+			<div class="form-group">
+				<label for="post_author" class="col-sm-2 control-label">作者</label>
+				<div class="col-sm-10">
+					<input type="text" placeholder="作者" class="form-control" id="post_author" name="post_author" required value="{$posts.post_author}" />
+				</div>
+			</div>
+			<div class="form-group">
+				<label for="mailname" class="col-sm-2 control-label">文章来源</label>
+				<div class="col-sm-10">
+					<input type="url" placeholder="文章来源" class="form-control" id="guid" name="guid" required value="{$posts.guid}" />
+				</div>
+			</div>
+			<div class="form-group">
+				<label for="post_info" class="col-sm-2 control-label">摘要</label>
+				<div class="col-sm-10">
+					<input type="text" placeholder="摘要" class="form-control" id="post_info" name="post_info" required value="{$posts.post_info}" />
+				</div>
+			</div>
+			<div class="form-group">
+				<label for="post_content" class="col-sm-2 control-label">内容</label>
+				<div class="col-sm-10">
+					<script id="editor" type="text/plain" name="post_content">
+					<p>{$posts.post_content}</p>
+				</script>
+				</div>
+			</div>
+			<div class="form-group">
+				<label for="post_status" class="col-sm-2 control-label">状态</label>
+				<div class="col-sm-10">
+					<label class="radio-inline"> <input type="radio" id="post_status" name="post_status" value="1"
+					<if condition="$posts.post_status eq 1">checked</if>>审核
+					</label> <label class="radio-inline"> <input type="radio" id="post_status" name="post_status" value="0"
+					<if condition="$posts.post_status eq 0">checked</if>>待审核
+					</label>
+				</div>
+			</div>
+			<div class="form-group">
+				<div class="col-sm-offset-2 col-sm-10">
+					<button type="submit" class="btn btn-primary">
+						<i class="icon-ok"></i>保存
+					</button>
+				</div>
+			</div>
+		</div>
+	</div>
+</form>
+<script type="text/javascript">
+	$(function() {
+		var ue = UE.getEditor('editor');
+	})
+</script> </block>

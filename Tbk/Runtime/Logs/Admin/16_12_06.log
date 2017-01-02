@@ -1,0 +1,259 @@
+[ 2016-12-06T00:05:05+08:00 ] 127.0.0.1 /Tbk/index.php/Admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000560s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001290s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001424s ]
+NOTIC: [8] Undefined index: wodai D:\Apache\htdocs\tbk\Tbk\Admin\Controller\BaseController.class.php 第 7 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000076s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000185s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.052901s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.053028s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000442s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000500s ]
+
+[ 2016-12-06T00:05:08+08:00 ] 127.0.0.1 /Tbk/index.php/Admin/Login/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000762s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000620s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000690s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000073s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000165s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.068020s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.068170s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000579s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000675s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001159s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001252s ]
+
+[ 2016-12-06T00:05:14+08:00 ] 127.0.0.1 /Tbk/index.php/Admin/Login/dologin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000590s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000806s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000888s ]
+NOTIC: [8] Undefined index: verify D:\Apache\htdocs\tbk\Tbk\Admin\Controller\LoginController.class.php 第 13 行.
+SQL: SHOW COLUMNS FROM `tbk_user` [ RunTime:0.0368s ]
+SQL: SELECT * FROM `tbk_user` WHERE ( user_login='admin' AND user_pass='e10adc3949ba59abbe56e057f20f883e' ) LIMIT 1   [ RunTime:0.0016s ]
+
+[ 2016-12-06T00:05:14+08:00 ] 127.0.0.1 /Tbk/index.php/Admin/Index/Index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000416s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000576s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000635s ]
+SQL: SHOW COLUMNS FROM `tbk_usermeta` [ RunTime:0.0046s ]
+SQL: SELECT * FROM `tbk_usermeta` WHERE ( user_id=1 )  [ RunTime:0.0134s ]
+NOTIC: [8] Undefined variable: userinfo D:\Apache\htdocs\tbk\Tbk\Admin\Controller\BaseController.class.php 第 48 行.
+SQL: SHOW COLUMNS FROM `tbk_menu` [ RunTime:0.0044s ]
+SQL: SELECT * FROM `tbk_menu` WHERE ( 1=1 and parentid=0 and  cid =1 and status=1 )  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `tbk_menu` WHERE ( 1=1 and parentid!=0 and  cid =1 and status=1 )  [ RunTime:0.0004s ]
+NOTIC: [8] Undefined variable: sidebar D:\Apache\htdocs\tbk\Tbk\Admin\Controller\BaseController.class.php 第 23 行.
+SQL: select VERSION() as version [ RunTime:0.0216s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000114s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000228s ]
+NOTIC: [8] Use of undefined constant pic - assumed 'pic' D:\Apache\htdocs\tbk\Tbk\Runtime\Cache\Admin\b917688f1f79756cf50576bf1726e1bb.php 第 36 行.
+NOTIC: [8] Use of undefined constant nickname - assumed 'nickname' D:\Apache\htdocs\tbk\Tbk\Runtime\Cache\Admin\b917688f1f79756cf50576bf1726e1bb.php 第 37 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.070477s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.070580s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000442s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000496s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000593s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000649s ]
+
+[ 2016-12-06T00:05:20+08:00 ] 127.0.0.1 /Tbk/index.php/Admin/Index/index.php/Admin/Backup/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000046s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000521s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001068s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001193s ]
+SQL: SHOW COLUMNS FROM `tbk_usermeta` [ RunTime:0.0049s ]
+SQL: SELECT * FROM `tbk_usermeta` WHERE ( user_id=1 )  [ RunTime:0.0005s ]
+NOTIC: [8] Undefined variable: userinfo D:\Apache\htdocs\tbk\Tbk\Admin\Controller\BaseController.class.php 第 48 行.
+SQL: SHOW COLUMNS FROM `tbk_menu` [ RunTime:0.0037s ]
+SQL: SELECT * FROM `tbk_menu` WHERE ( 1=1 and parentid=0 and  cid =1 and status=1 )  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `tbk_menu` WHERE ( 1=1 and parentid!=0 and  cid =1 and status=1 )  [ RunTime:0.0004s ]
+NOTIC: [8] Undefined variable: sidebar D:\Apache\htdocs\tbk\Tbk\Admin\Controller\BaseController.class.php 第 23 行.
+ERR: 非法操作:index.php
+
+[ 2016-12-06T00:14:03+08:00 ] 127.0.0.1 /Tbk/index.php/Admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000947s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001491s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001591s ]
+SQL: SHOW COLUMNS FROM `tbk_usermeta` [ RunTime:0.0052s ]
+SQL: SELECT * FROM `tbk_usermeta` WHERE ( user_id=1 )  [ RunTime:0.0005s ]
+NOTIC: [8] Undefined variable: userinfo D:\Apache\htdocs\tbk\Tbk\Admin\Controller\BaseController.class.php 第 48 行.
+SQL: SHOW COLUMNS FROM `tbk_menu` [ RunTime:0.0073s ]
+SQL: SELECT * FROM `tbk_menu` WHERE ( 1=1 and parentid=0 and  cid =1 and status=1 )  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `tbk_menu` WHERE ( 1=1 and parentid!=0 and  cid =1 and status=1 )  [ RunTime:0.0004s ]
+NOTIC: [8] Undefined variable: sidebar D:\Apache\htdocs\tbk\Tbk\Admin\Controller\BaseController.class.php 第 23 行.
+SQL: select VERSION() as version [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000089s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000184s ]
+NOTIC: [8] Use of undefined constant pic - assumed 'pic' D:\Apache\htdocs\tbk\Tbk\Runtime\Cache\Admin\3438f88dea6c5408f17f6028e0f37ba0.php 第 36 行.
+NOTIC: [8] Use of undefined constant nickname - assumed 'nickname' D:\Apache\htdocs\tbk\Tbk\Runtime\Cache\Admin\3438f88dea6c5408f17f6028e0f37ba0.php 第 37 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.036129s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.036231s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001533s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001621s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003700s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003852s ]
+
+[ 2016-12-06T00:14:38+08:00 ] 127.0.0.1 /Tbk/index.php/Admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000838s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001516s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001604s ]
+SQL: SHOW COLUMNS FROM `tbk_usermeta` [ RunTime:0.0049s ]
+SQL: SELECT * FROM `tbk_usermeta` WHERE ( user_id=1 )  [ RunTime:0.0005s ]
+NOTIC: [8] Undefined variable: userinfo D:\Apache\htdocs\tbk\Tbk\Admin\Controller\BaseController.class.php 第 48 行.
+SQL: SHOW COLUMNS FROM `tbk_menu` [ RunTime:0.0041s ]
+SQL: SELECT * FROM `tbk_menu` WHERE ( 1=1 and parentid=0 and  cid =1 and status=1 )  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `tbk_menu` WHERE ( 1=1 and parentid!=0 and  cid =1 and status=1 )  [ RunTime:0.0004s ]
+NOTIC: [8] Undefined variable: sidebar D:\Apache\htdocs\tbk\Tbk\Admin\Controller\BaseController.class.php 第 23 行.
+SQL: select VERSION() as version [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000134s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000272s ]
+NOTIC: [8] Use of undefined constant pic - assumed 'pic' D:\Apache\htdocs\tbk\Tbk\Runtime\Cache\Admin\3438f88dea6c5408f17f6028e0f37ba0.php 第 36 行.
+NOTIC: [8] Use of undefined constant nickname - assumed 'nickname' D:\Apache\htdocs\tbk\Tbk\Runtime\Cache\Admin\3438f88dea6c5408f17f6028e0f37ba0.php 第 37 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019760s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019862s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001196s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001260s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002069s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002167s ]
+
+[ 2016-12-06T00:14:42+08:00 ] 127.0.0.1 /Tbk/index.php/Admin/Backup/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000658s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002146s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002245s ]
+SQL: SHOW COLUMNS FROM `tbk_usermeta` [ RunTime:0.0039s ]
+SQL: SELECT * FROM `tbk_usermeta` WHERE ( user_id=1 )  [ RunTime:0.0004s ]
+NOTIC: [8] Undefined variable: userinfo D:\Apache\htdocs\tbk\Tbk\Admin\Controller\BaseController.class.php 第 48 行.
+SQL: SHOW COLUMNS FROM `tbk_menu` [ RunTime:0.0046s ]
+SQL: SELECT * FROM `tbk_menu` WHERE ( 1=1 and parentid=0 and  cid =1 and status=1 )  [ RunTime:0.0007s ]
+SQL: SELECT * FROM `tbk_menu` WHERE ( 1=1 and parentid!=0 and  cid =1 and status=1 )  [ RunTime:0.0004s ]
+NOTIC: [8] Undefined variable: sidebar D:\Apache\htdocs\tbk\Tbk\Admin\Controller\BaseController.class.php 第 23 行.
+SQL: SHOW TABLES  [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000167s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000281s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.090113s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.090227s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001127s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001183s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001960s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002039s ]
+
+[ 2016-12-06T00:14:49+08:00 ] 127.0.0.1 /Tbk/index.php/Admin/Backup/dobackup.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000737s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001907s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002016s ]
+SQL: SHOW COLUMNS FROM `tbk_usermeta` [ RunTime:0.0049s ]
+SQL: SELECT * FROM `tbk_usermeta` WHERE ( user_id=1 )  [ RunTime:0.0005s ]
+NOTIC: [8] Undefined variable: userinfo D:\Apache\htdocs\tbk\Tbk\Admin\Controller\BaseController.class.php 第 48 行.
+SQL: SHOW COLUMNS FROM `tbk_menu` [ RunTime:0.0048s ]
+SQL: SELECT * FROM `tbk_menu` WHERE ( 1=1 and parentid=0 and  cid =1 and status=1 )  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `tbk_menu` WHERE ( 1=1 and parentid!=0 and  cid =1 and status=1 )  [ RunTime:0.0004s ]
+NOTIC: [8] Undefined variable: sidebar D:\Apache\htdocs\tbk\Tbk\Admin\Controller\BaseController.class.php 第 23 行.
+SQL: SHOW CREATE TABLE  tbk_comments [ RunTime:0.0003s ]
+SQL: SHOW CREATE TABLE  tbk_keyword [ RunTime:0.0878s ]
+SQL: SHOW CREATE TABLE  tbk_links [ RunTime:0.0469s ]
+SQL: SHOW CREATE TABLE  tbk_menu [ RunTime:0.0003s ]
+SQL: SHOW CREATE TABLE  tbk_options [ RunTime:0.0002s ]
+SQL: SHOW CREATE TABLE  tbk_posts [ RunTime:0.0002s ]
+SQL: SHOW CREATE TABLE  tbk_tbkitem [ RunTime:0.0002s ]
+SQL: SHOW CREATE TABLE  tbk_user [ RunTime:0.0003s ]
+SQL: SHOW CREATE TABLE  tbk_usermeta [ RunTime:0.0002s ]
+SQL: SHOW CREATE TABLE  tbk_wx [ RunTime:0.0348s ]
+SQL: SELECT * FROM tbk_comments [ RunTime:0.0004s ]
+SQL: SELECT * FROM tbk_keyword [ RunTime:0.0002s ]
+SQL: SELECT * FROM tbk_links [ RunTime:0.0002s ]
+SQL: SELECT * FROM tbk_menu [ RunTime:0.0004s ]
+SQL: SELECT * FROM tbk_options [ RunTime:0.0006s ]
+SQL: SELECT * FROM tbk_posts [ RunTime:0.0004s ]
+SQL: SELECT * FROM tbk_tbkitem [ RunTime:0.1110s ]
+SQL: SELECT * FROM tbk_user [ RunTime:0.0006s ]
+SQL: SELECT * FROM tbk_usermeta [ RunTime:0.0005s ]
+SQL: SELECT * FROM tbk_wx [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000071s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000161s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016038s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016192s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001520s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001602s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002189s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002297s ]
+
+[ 2016-12-06T00:14:51+08:00 ] 127.0.0.1 /Tbk/index.php/Admin/Backup/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000860s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001453s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001554s ]
+SQL: SHOW COLUMNS FROM `tbk_usermeta` [ RunTime:0.0039s ]
+SQL: SELECT * FROM `tbk_usermeta` WHERE ( user_id=1 )  [ RunTime:0.0006s ]
+NOTIC: [8] Undefined variable: userinfo D:\Apache\htdocs\tbk\Tbk\Admin\Controller\BaseController.class.php 第 48 行.
+SQL: SHOW COLUMNS FROM `tbk_menu` [ RunTime:0.0041s ]
+SQL: SELECT * FROM `tbk_menu` WHERE ( 1=1 and parentid=0 and  cid =1 and status=1 )  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `tbk_menu` WHERE ( 1=1 and parentid!=0 and  cid =1 and status=1 )  [ RunTime:0.0004s ]
+NOTIC: [8] Undefined variable: sidebar D:\Apache\htdocs\tbk\Tbk\Admin\Controller\BaseController.class.php 第 23 行.
+NOTIC: [2] end() expects parameter 1 to be array, null given D:\Apache\htdocs\tbk\Tbk\Admin\Controller\BackupController.class.php 第 164 行.
+SQL: SHOW TABLES  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000107s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000202s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023288s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023417s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001711s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001803s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001594s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001669s ]
+

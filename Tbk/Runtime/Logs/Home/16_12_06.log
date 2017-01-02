@@ -1,0 +1,40 @@
+[ 2016-12-06T00:03:45+08:00 ] 127.0.0.1 /Tbk/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.031503s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.014838s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015010s ]
+SQL: SHOW COLUMNS FROM `tbk_usermeta` [ RunTime:0.0648s ]
+NOTIC: [8] Undefined index: wodai D:\Apache\htdocs\tbk\Tbk\Home\Controller\BaseController.class.php 第 32 行.
+SQL: SHOW COLUMNS FROM `tbk_menu` [ RunTime:0.0118s ]
+SQL: SELECT * FROM `tbk_menu` WHERE ( 1=1 and parentid=0 and  cid =0 and status=1 )  [ RunTime:0.0432s ]
+SQL: SELECT * FROM `tbk_menu` WHERE ( 1=1 and parentid!=0 and  cid =0 and status=1 )  [ RunTime:0.0005s ]
+NOTIC: [8] Undefined variable: sidebar D:\Apache\htdocs\tbk\Tbk\Home\Controller\BaseController.class.php 第 14 行.
+SQL: SHOW COLUMNS FROM `tbk_options` [ RunTime:0.0417s ]
+SQL: SELECT * FROM `tbk_options` WHERE ( autoload='yes' )  [ RunTime:0.0232s ]
+SQL: SHOW COLUMNS FROM `tbk_tbkitem` [ RunTime:0.0046s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tbk_tbkitem` LIMIT 1   [ RunTime:0.0476s ]
+NOTIC: [8] Undefined variable: cwhere D:\Apache\htdocs\tbk\Tbk\Home\Controller\BaseController.class.php 第 60 行.
+SQL: SELECT * FROM `tbk_tbkitem` LIMIT 0,12   [ RunTime:0.0351s ]
+SQL: SHOW COLUMNS FROM `tbk_posts` [ RunTime:0.1194s ]
+SQL: SELECT * FROM `tbk_posts` WHERE ( 1=1 and post_status='publish' and post_type='post' and post_date<now() ) ORDER BY comment_count desc LIMIT 5   [ RunTime:0.1249s ]
+SQL: SELECT * FROM `tbk_posts` WHERE ( 1=1 and post_status='publish' and post_type='post' ) ORDER BY post_date desc LIMIT 5   [ RunTime:0.0012s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000113s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000253s ]
+NOTIC: [8] Use of undefined constant option_value - assumed 'option_value' D:\Apache\htdocs\tbk\Tbk\Runtime\Cache\Home\31c734afd87e76df000e81f187e3e6be.php 第 15 行.
+NOTIC: [8] Use of undefined constant option_value - assumed 'option_value' D:\Apache\htdocs\tbk\Tbk\Runtime\Cache\Home\31c734afd87e76df000e81f187e3e6be.php 第 16 行.
+NOTIC: [8] Use of undefined constant option_value - assumed 'option_value' D:\Apache\htdocs\tbk\Tbk\Runtime\Cache\Home\31c734afd87e76df000e81f187e3e6be.php 第 17 行.
+NOTIC: [8] Use of undefined constant option_value - assumed 'option_value' D:\Apache\htdocs\tbk\Tbk\Runtime\Cache\Home\31c734afd87e76df000e81f187e3e6be.php 第 31 行.
+NOTIC: [8] Use of undefined constant option_value - assumed 'option_value' D:\Apache\htdocs\tbk\Tbk\Runtime\Cache\Home\31c734afd87e76df000e81f187e3e6be.php 第 32 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.194101s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.194288s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.026863s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.026998s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.014328s ]
+INFO: [ app_end ] --END-- [ RunTime:0.014459s ]
+

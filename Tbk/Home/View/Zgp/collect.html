@@ -1,0 +1,54 @@
+<extend name="Admin/main" />
+<block name="header"> <include file="Admin:header" /> </block>
+<block name="wpbody">
+<div id="wpbody">
+	<div class="wrap">
+		<h2>
+			采集 <a href="http://127.0.0.1/wordpress/wp-admin/post-new.php"
+				class="add-new-h2">添加采集器</a>
+		</h2>
+
+		<table class="wp-list-table widefat fixed posts">
+			<thead>
+				<tr>
+					<th scope="col" id="cb" class="manage-column column-cb check-column"><span>id</span></th>
+					<th scope="col"><span>名称</span></th>
+					<th scope="col"><span>时间</span></th>
+					<th scope="col"><span>管理操作</span></th>
+			
+			</tr>
+			</thead>
+	
+		<tbody id="the-list">
+			<tr>
+				<td><strong>1</strong></td>
+				<td><span>测试</span></td>
+				<td><span>04月13日</span></td>
+				<td><a href="javascript:collect({$val.id},1);">开始</a><span>继续</span><span>编辑</span></td>
+			</tr>
+
+		</tbody>
+	</table>
+	</div>
+
+</div>
+</block>
+
+<block name="footer"> <include file="Admin:footer" /> </block>
+
+<script>
+var collect_url = "{:U('Admin/collect')}";
+var id = 0;
+var p = 1;
+function collect(id,p){
+    $.getJSON(collect_url, {id:id,p:p}, function(result){
+        if(result.status == 1){
+			$.dialog({id:'cmt_taobao', title:result.msg, content:result.data, padding:'', lock:true});
+            p++;
+			setTimeout("collect_page("+ id +","+ p+")",1000);
+        }else{
+            $.ftxia.tip({content:result.msg});
+        }
+    });
+}
+</script>

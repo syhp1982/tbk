@@ -1,0 +1,47 @@
+<extend name="Public:main" />
+<block name="main">
+<h1 class="page-header">菜单管理</h1>
+<div class="clearfix">
+	<div class="form-group">
+		<a href="{:U('Nav/nav_add')}">
+			<button type="button" class="btn btn-success">
+				添加<i class="icon-plus"></i>
+			</button>
+		</a>
+	</div>
+</div>
+<div class="form-group">
+	<table class="table table-bordered table-condensed text-nowrap">
+		<thead>
+			<tr role="row">
+				<th style="width: 24px;" class="sorting_disabled" role="columnheader" rowspan="1" colspan="1" aria-label=""><div class="checker">
+						<span><input type="checkbox" class="group-checkable" data-set="#sample_1 .checkboxes"></span>
+					</div></th>
+				<th role="columnheader" tabindex="0" rowspan="1" colspan="1"
+					aria-label="Username: activate to sort column ascending" style="width: 169px;">ID</th>
+				<th role="columnheader" rowspan="1" colspan="1" style="width: 176px;">作者</th>
+				<th  role="columnheader" rowspan="2" colspan="1" style="width: 176px;">评论</th>
+				<th  role="columnheader" rowspan="1" colspan="1" style="width: 176px;">文章</th>
+				<th  role="columnheader" tabindex="0" aria-controls="sample_1" rowspan="1" colspan="1"
+					style="width: 116px;">状态</th>
+				<th class="hidden-480 sorting_disabled" role="columnheader" rowspan="1" colspan="1" style="width: 176px;">提交时间</th>
+			</tr>
+		</thead>
+		<tbody>
+			<foreach name="list" item="list">
+			<tr>
+				<td class=" sorting_1"><div class="checker">
+						<span><input type="checkbox" class="checkboxes" value="1"></span>
+					</div></td>
+				<td><span>{$list.comment_id}</span></td>
+				<td><span>{$list.comment_author}</span></td>
+				<td><span>{$list.comment_content}</span></td>
+				<td><span><a href="{:U('Nav/nav_edit',array('ID'=>$list[id]))}"}>{$list.comment_post_title}</a></span></td>
+				<td><span><if condition="$list.comment_approved eq 1">审核<else />未审核</if></span></td>
+				<td><span>{$list.comment_date}</span></td>
+			</tr>
+		 </foreach>
+		</tbody>
+	</table>
+</div>
+</block>

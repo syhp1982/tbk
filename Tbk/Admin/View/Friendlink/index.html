@@ -1,0 +1,45 @@
+<extend name="Public:main" />
+<block name="main">
+<h1 class="page-header">{$page_title}</h1>
+<div class="clearfix">
+	<div class="form-group">
+		<a href="{:U('Friendlink/friendlink_add')}">
+			<button type="button" class="btn btn-success">
+				添加<i class="icon-plus"></i>
+			</button>
+		</a>
+	</div>
+</div>
+<div class="form-group">
+	<table class="table table-bordered table-condensed text-nowrap">
+		<thead>
+			<tr role="row">
+				<th class="col-xs-1" rowspan="1" colspan="1" ><div class="checker">
+						<span><input type="checkbox" class="group-checkable" ></span>
+					</div></th>
+				<th class="col-xs-1"  rowspan="1" colspan="1">ID</th>
+				<th class="col-xs-2"  rowspan="1" colspan="1">网站名称</th>
+				<th class="col-xs-2" rowspan="1" colspan="1">网址</th>
+				<th class="col-xs-2" rowspan="1" colspan="1" >增加时间</th>
+				<th class="col-xs-2"  rowspan="1" colspan="1" >状态</th>
+				<th class="col-xs-2"  rowspan="1" colspan="1"  >操作</th>
+			</tr>
+		</thead>
+		<tbody>
+			<foreach name="friendlink" item="friendlink">
+			<tr>
+				<td class=" sorting_1"><div class="checker">
+						<span><input type="checkbox" class="checkboxes" value="1"></span>
+					</div></td>
+				<td><span>{$friendlink.link_id}</span></td>
+				<td><span>{$friendlink.link_name}</span></td>
+				<td><span>{$friendlink.link_url}</span></td>
+				<td><span>{$friendlink.link_updated}</span></td>
+				<td><span><if condition="$friendlink.link_status eq 1">启用<else />禁用</if></span></td>
+				<td><span><a href="{:U('Friendlink/friendlink_edit',array('ID'=>$friendlink[link_id]))}"><button type="button" class="btn  btn-info">修改</button></a></span></td>
+			</tr>
+		 </foreach>
+		</tbody>
+	</table>
+</div>
+</block>

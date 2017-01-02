@@ -1,0 +1,26 @@
+<extend name="Public:main" />
+<block name="main"> 
+	<div class="blog-main">
+	<foreach name="posts" item="posts">
+<div class="col-md-4">
+	<h2>
+		<p>{$posts.title}</p>
+	</h2>
+	<p>
+		<img src="{$posts.pict_url}" class="img-responsive center-block" />
+	</p>
+	<p>价格：{$posts.reserve_price}元   本月销量：{$posts.volume}</p>
+	<p>
+		优惠券：<a href="{$posts.activity_url}" class="btn btn-success">点击领取</a>	链接：<a href="{$posts.click_short_urls}" class="btn btn-success">点击购买</a>
+	</p>
+	<p>优惠口令：{$posts.click_pw}</p>
+</div>
+</foreach>
+
+<nav>
+	<ul class="pager">
+		<?php print_r($page) ?>
+	</ul>
+</nav>
+</div>
+</block>

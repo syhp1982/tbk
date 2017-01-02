@@ -1,0 +1,24 @@
+<extend name="Public:main" />
+<block name="main"> <foreach name="posts" item="posts">
+<div class="col-md-4 ">
+<article class="blog-post">
+	<p>
+		<img src="{$posts.pict_url}" class="img-responsive center-block" />
+	</p>
+	<h2>
+		<a href="{:U('Title/index',array('ID'=>$posts[num_iid]))}"><p>{$posts.title}</p></a>
+		</h2>
+	<p>价格：{$posts.reserve_price}元 本月销量：{$posts.volume}</p>
+	<p>
+		优惠券：<a href="{$posts.activity_url}" class="btn btn-success">点击领取</a> 链接：<a href="{$posts.click_short_urls}" class="btn btn-success">点击购买</a>
+	</p>
+	<p>优惠口令：{$posts.click_pw}</p>
+	</article>
+</div>
+</foreach>
+		<nav>
+			<ul class="pagination pagination-lg">
+				<?php print_r($page) ?>
+			</ul>
+		</nav>
+</block>

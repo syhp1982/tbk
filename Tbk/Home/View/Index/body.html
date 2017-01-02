@@ -1,0 +1,68 @@
+<div class="sidebar">
+	<div class="hfeed site">
+		<header class="site-header">
+			<div class="site-branding">
+				<a href="{$options[0][option_value]}"
+					title="{$options[2][option_value]}" rel="home">
+					<h1 class="site-title">{$options[2][option_value]}</h1>
+					<h2 class="site-description">{$options[3][option_value]}</h2>
+				</a>
+			</div>
+		</header>
+	</div>
+	<div class="secondary">
+		<div class="widget-area">
+			<aside class="widget widget_nav_menu">
+				<foreach name="menu" item="menu">
+				<ul>
+					<li><a href="{:U('Index/index')}">{$menu.label}</a></li>
+				</ul>
+				</foreach>
+			</aside>
+			<aside class="widget widget_recent_entries">
+				<h2 class="widget-title">热点</h2>
+				<foreach name="hot" item="hot">
+				<ul>
+					<li><a href="{:U('Title/index',array('ID'=>$hot[id]))}">{$hot.post_title}</a></li>
+				</ul>
+				</foreach>
+			</aside>
+		</div>
+	</div>
+</div>
+<div id="content" class="site-content">
+	<div class="content-area">
+		<main class="site-main"> <foreach name="posts" item="vo">
+		<article
+			class="post type-post status-publish format-standard hentry category-uncategorized">
+			<header class="entry-header">
+				<h2 class="entry-title">
+					<a href="{:U('Title/index',array('ID'=>$vo[id]))}">{$vo.post_title}</a>
+				</h2>
+			</header>
+			<div class="entry-content">
+				<p>销售价:&nbsp￥{$vo.reserve_price} &nbsp&nbsp本月销量：&nbsp{$vo.volume}</p>
+				<p style="color:red;"> 打折价:&nbsp￥{$vo.discount_price}&nbsp&nbsp&nbsp&nbsp<a data-type="0" biz-itemid={$vo[id]} data-tmpl="192x40"
+					data-tmplid="625" data-rd="2" data-style="2" data-border="1"
+					href="{:U('Title/index',array('ID'=>$vo[id]))}">查看详情</a></p>
+				<p align="center"><img  width="400" height="400" src={$vo.pict_url} class="attachment-post-thumbnail wp-post-image" alt={$vo[post_info]} /></p>				
+			</div>
+			<footer class="entry-footer">  <span class="cat-links">点击量：{$vo.comment_count}</span>
+			<span class="posted-on">发布于 </span><a href="{:U('Title/index',array('ID'=>$vo[id]))}" rel="bookmark"><time class="entry-date published updated" datetime={$vo.post_date}>{$vo.post_date}</time></a></span>
+			<span class="posted-on">更新于 </span><a href="{:U('Title/index',array('ID'=>$vo[id]))}" rel="bookmark"><time class="entry-date published updated" datetime={$vo.post_date}>{$vo.post_modified}</time></a></span>
+			<div class="bdsharebuttonbox"><a href="#" class="bds_more" data-cmd="more">分享到：</a><a href="#" class="bds_qzone" data-cmd="qzone" title="分享到QQ空间">QQ空间</a><a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博">新浪微博</a><a href="#" class="bds_tqq" data-cmd="tqq" title="分享到腾讯微博">腾讯微博</a><a href="#" class="bds_renren" data-cmd="renren" title="分享到人人网">人人网</a><a href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信">微信</a></div>
+<script>window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"0","bdSize":"16"},"share":{"bdSize":16}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];</script>
+			</footer>
+		</article>
+		</foreach>
+		<nav class="navigation pagination" role="navigation">
+			<h2 class="screen-reader-text">文章导航</h2>
+			<div class="nav-links">
+				<div class="page-numbers">
+					<?php print_r($page) ?>
+				</div>
+			</div>
+		</nav>
+		</main>
+	</div>
+</div>

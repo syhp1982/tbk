@@ -1,0 +1,11 @@
+<extend name="Admin:index" />
+<block name="main">
+<h1 class="page-header">系统信息</h1>
+<div class="tab-content">
+	<dl class="dl-horizontal">
+		<volist name="server_info" id="vo">
+					<dt>{$key} </dt><dd>{$vo}</dd>
+				</volist>
+	</dl>
+</div>
+</block>

@@ -1,0 +1,7 @@
+/* Move down content because we have a fixed navbar that is 50px tall */
+body {
+	font-family: Georgia, "Times New Roman", Times, serif;
+  color: #555;
+  padding-top: 50px;
+  padding-bottom: 20px;
+}

@@ -1,0 +1,70 @@
+<extend name="Public:main" />
+<block name="main">
+<h1 class="page-header">{$page_title}</h1>
+<div class="tab-content">
+	<div role="tabpanel" class="tab-pane fade in active col-sm-8" id="home">
+		<form method="post" action="{:U('Friendlink/doedit',array('ID'=>$Friendlink[link_id]))}"  class="form-horizontal">
+			<input type="text" placeholder="link_id" class="sr-only " id="link_id" name="link_id" required value="{$friendlink.link_id}" disabled />
+			<div class="form-group">
+				<label for="link_name" class="col-sm-2 control-label">网站名称 </label>
+				<div class="col-sm-10">
+					<input type="text" placeholder="网站名称" class="col-sm-4 form-control" id="link_name" name="link_name" required value="{$friendlink.link_name}"  />
+				</div>
+			</div>
+			<div class="form-group">
+				<label for="link_url" class="col-sm-2 control-label"> 网址</label>
+				<div class="col-sm-10">
+					<input type="url" placeholder="网址" class="form-control" id="link_url" name="link_url" required value="{$friendlink.link_url}" />
+				</div>
+			</div>
+			<div class="form-group">
+				<label for="link_description" class="col-sm-2 control-label"> 网站描述</label>
+				<div class="col-sm-10">
+					<textarea class="form-control" placeholder="网站描述" id="link_description" name="link_description" rows="3">{$friendlink.link_description}</textarea>
+				</div>
+			</div>
+			<div class="form-group">
+				<label for="link_email" class="col-sm-2 control-label">邮箱地址</label>
+				<div class="col-sm-10">
+					<input type="email" placeholder="邮箱地址" class="form-control" id="link_email" name="link_email" required value="{$friendlink.link_email}" />
+				</div>
+			</div>
+			<div class="form-group">
+				<label for="link_qq" class="col-sm-2 control-label">QQ</label>
+				<div class="col-sm-10">
+					<input type="number" placeholder="QQ号" class="form-control" id="link_qq" name="link_qq" value="{$friendlink.link_qq}" />
+				</div>
+			</div>
+			<div class="form-group">
+				<label for="link_qq" class="col-sm-2 control-label">打开方式</label>
+				<div class="col-sm-10">
+					<select class="form-control"  id="link_target" name="link_target" >
+						<option value="_blank"<if condition="$friendlink.link_target eq _blank">selected</if>>新标签页打开
+						</option>
+						<option value="_self" <if condition=" $friendlink.link_target eq _self">selected
+							</if>>本窗口打开
+						</option>
+					</select>
+				</div>
+			</div>
+			<div class="form-group">
+				<label for="link_status" class="col-sm-2 control-label">状态</label>
+				<div class="col-sm-10">
+					<label class="radio-inline"> <input type="radio" name="link_status" id="link_status" value="1"
+					<if condition="$friendlink.link_status eq 1">checked</if>> 启用
+					</label> <label class="radio-inline"> <input type="radio" name="link_status" id="link_status" value="2"
+					<if condition="$friendlink.link_status eq 2">checked</if>> 禁用
+					</label>
+				</div>
+			</div>
+			<div class="form-group">
+				<div class="col-sm-offset-2 col-sm-10">
+					<button type="submit" class="btn btn-primary">
+						<i class="icon-ok"></i>保存
+					</button>
+				</div>
+			</div>
+		</form>
+	</div>
+</div>
+</block>

@@ -1,0 +1,91 @@
+<extend name="Public:main" />
+<block name="main">
+<ul class="nav nav-tabs" role="tablist">
+	<li role="presentation" class="active"><a data-toggle="tab" href="#home" aria-controls="home" role="tab">网站信息</a></li>
+	<li role="presentation"><a data-toggle="tab" href="#seo" aria-controls="seo" role="tab">Seo信息</a></li>
+</ul>
+<h1 class="page-header">网站信息</h1>
+<div class="tab-content">
+	<div role="tabpanel" class="tab-pane fade in active" id="home">
+		<form method="post" action="{:U('Admin/doedit')}" enctype="multipart/form-data" class="form-horizontal">
+			<div class="form-group">
+				<label for="blogname" class="col-sm-2 control-label">站点标题</label>
+				<div class="col-sm-10">
+					<input type="text" placeholder="站点标题" class="form-control" id="blogname" name="blogname" required value="{$options_info.blogname}" />
+				</div>
+			</div>
+			<div class="form-group">
+				<label for="siteurl" class="col-sm-2 control-label">站点地址</label>
+				<div class="col-sm-10">
+					<input type="text" placeholder="站点地址" class="form-control" id="siteurl" name="siteurl" required value="{$options_info.siteurl}" />
+				</div>
+			</div>
+			<div class="form-group">
+				<label for="siteurl" class="col-sm-2 control-label">管理员邮箱</label>
+				<div class="col-sm-10">
+					<input type="text" placeholder="管理员邮箱" class="form-control" id="admin_email" name="admin_email" required value="{$options_info.admin_email}" />
+				</div>
+			</div>
+			<div class="form-group">
+				<label for="blogdescription" class="col-sm-2 control-label">副标题</label>
+				<div class="col-sm-10">
+					<input type="text" placeholder="副标题" class="form-control" id="blogdescription" name="blogdescription" required value="{$options_info.blogdescription}" />
+				</div>
+			</div>
+			<div class="form-group">
+				<label for="stcode" class="col-sm-2 control-label">统计代码</label>
+				<div class="col-sm-10">
+					<textarea class="form-control" id="stcode" name="stcode" rows="3">{$options_info.stcode}</textarea>
+				</div>
+			</div>
+			<div class="form-group">
+				<label for="Copyright" class="col-sm-2 control-label">版权信息</label>
+				<div class="col-sm-10">
+					<textarea class="form-control" id="Copyright" name="Copyright" rows="3">{$options_info.Copyright}</textarea>
+				</div>
+			</div>
+			<div class="form-group">
+				<label for="logo" class="col-sm-2 control-label">网站LOGO</label> <input type="file" id="logo" name="logo" class="default" /> <img
+					src="__ROOT__/Public/images/{$options_info.Logo}" alt="" />
+			</div>
+			<div class="form-group">
+				<div class="col-sm-offset-2 col-sm-10">
+					<button type="submit" class="btn btn-primary">
+						<i class="icon-ok"></i>保存
+					</button>
+				</div>
+			</div>
+		</form>
+	</div>
+	<div role="tabpanel" class="tab-pane fade" id="seo">
+		<form method="post" action="{:U('Admin/doedit')}">
+			<div class="form-group">
+				<label for="blogname" class="col-sm-2 control-label">Seo标题</label>
+				<div class="col-sm-10">
+					<input type="text" placeholder="站点标题" class="form-control" id="blogname" name="blogname" required value="{$options_info.blogname}" />
+				</div>
+			</div>
+			<div class="form-group">
+				<label for="sitekey" class="col-sm-2 control-label">Seo关键字</label>
+				<div class="col-sm-10">
+					<input type="text" placeholder="站点地址" class="form-control" id="siteurl" name="siteurl" required value="{$options_info.siteurl}" />
+				</div>
+			</div>
+			<div class="form-group">
+				<label for="site_seo_description" class="col-sm-2 control-label">SEO描述</label>
+				<div class="col-sm-10">
+					<input type="text" placeholder="管理员邮箱" class="form-control" id="admin_email" name="admin_email" required value="{$options_info.admin_email}" />
+				</div>
+			</div>
+			<div class="form-group">
+				<div class="col-sm-offset-2 col-sm-10">
+					<button type="submit" class="btn btn-primary">
+						<i class="icon-ok"></i>保存
+					</button>
+				</div>
+			</div>
+		</form>
+	</div>
+</div>
+</block>
+

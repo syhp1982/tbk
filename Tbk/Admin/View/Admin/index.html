@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+<block name="header"> <include file="Public:header" /> </block>
+<block name="dashboard">
+<link href="__ROOT__/Public/css/admin/dashboard.css" rel="stylesheet">
+<link href="__ROOT__/Public/css/admin/theme.css" rel="stylesheet">
+<title>窝呆管理后台</title>
+</block>
+</head>
+<body>
+	<nav class="navbar navbar-inverse navbar-fixed-top">
+		<block name="top"> <include file="Public:topbar" /> </block>
+	</nav>
+	<div class="container-fluid">
+	<div class="row">
+		<aside class="col-sm-3 col-md-2 sidebar">
+			<block name="sidebar"> <include file="Public:sidebar" /> </block>
+		</aside>
+		<div class="embed-responsive embed-responsive-4by3">
+			<iframe  class="embed-responsive-item"   name="myMainName"  ></iframe> 
+		</div>
+		<div class="col-md-10">
+		<block name="footer"> <include file="Public:footer" /> </block>
+		</div>
+	</div>
+	</div>
+</body>
+</html>

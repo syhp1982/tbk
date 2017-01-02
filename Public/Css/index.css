@@ -1,0 +1,48 @@
+@CHARSET "UTF-8";
+/*
+===================
+MX样式
+===================
+
+===================
+@explain: 系统后台内容区域
+===================
+*/
+.dform {
+	text-align: center;
+}
+
+.mx_list {
+	z-index:9999;
+	position:fixed;
+	top:50%;
+	left:50%;
+	width:800px;
+	height:400px;
+	margin:-180px 0 0 -330px;
+	border-radius:5px;
+	border:solid 2px #666;
+	background-color:#fff;
+	display:none;
+	box-shadow: 0 0 10px #666;
+}
+.mx-poptit {
+	border-bottom:1px solid #ddd;
+	padding:12px;
+	position: relative;
+}
+.mx-poptit .close {
+	float:right;
+	color:#999;
+	padding:5px;
+	margin:-2px -5px -5px;
+	font:bold 14px/14px simsun;
+	text-shadow:0 1px 0 #ddd
+}
+.mx-poptit .close:hover {
+	color:#444;
+}
+.mx-popbod {
+	color:#444;
+	height: 148px;
+}

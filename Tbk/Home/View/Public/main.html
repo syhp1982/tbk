@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+<block name="header"> <include file="Public:header" /> </block>
+<block name="dashboard">
+<link href="__ROOT__/Public/Css/blog/blog.css" rel="stylesheet">
+<meta name="keywords" content={$options[1][option_value]} />
+<meta name="description" content={$options[3][option_value]} />
+<title>{$options[2][option_value]}</title>
+</block>
+</head>
+<body>
+	<div class="blog-masthead">
+		<div class="container">
+			<block name="top"> <include file="Public:topbar" /> </block>
+		</div>
+	</div>
+	<div class="container">
+		<aside class="blog-header">
+			<block name="title"> <include file="Public:title" /> </block>
+		</aside>
+		<div class="row" id="post-list">
+			<block name="main"> </block>
+		</div>
+
+	</div>
+	<block name="footer"> <include file="Public:footer" /> </block>
+</body>
+</html>

@@ -1,0 +1,9 @@
+<block name="header">
+<meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="chrome=1,IE=edge" />
+<link href="__ROOT__/Public/css/bootstrap/css/bootstrap.css" rel="stylesheet" type="text/css" />
+<link href="__ROOT__/Public/css/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+<link href="__ROOT__/Public/css/style.css" rel="stylesheet" type="text/css" />
+<link href='__ROOT__/Public/favicon.ico' rel='shortcut icon'/>
+<script  src="__ROOT__/Public/Js/Ueditor/third-party/jquery-1.10.2.min.js"></script> 
+</block>

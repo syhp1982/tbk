@@ -1,0 +1,286 @@
+[ 2016-12-28T00:18:59+08:00 ] 127.0.0.1 /Tbk/index.php/Home/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.009781s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.007156s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007304s ]
+SQL: SHOW COLUMNS FROM `tbk_menu` [ RunTime:0.0395s ]
+SQL: SELECT * FROM `tbk_menu` WHERE ( 1=1 and parentid=0 and  cid =0 and status=1 )  [ RunTime:0.0100s ]
+SQL: SHOW COLUMNS FROM `tbk_options` [ RunTime:0.0606s ]
+SQL: SELECT * FROM `tbk_options` WHERE ( autoload='yes' )  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `tbk_tbkitem` [ RunTime:0.0298s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tbk_tbkitem` LIMIT 1   [ RunTime:0.0534s ]
+SQL: SELECT * FROM `tbk_tbkitem` LIMIT 0,12   [ RunTime:0.0027s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000067s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000249s ]
+NOTIC: [8] Use of undefined constant option_value - assumed 'option_value' D:\Apache\htdocs\tbk\Tbk\Runtime\Cache\Home\31c734afd87e76df000e81f187e3e6be.php 第 15 行.
+NOTIC: [8] Use of undefined constant option_value - assumed 'option_value' D:\Apache\htdocs\tbk\Tbk\Runtime\Cache\Home\31c734afd87e76df000e81f187e3e6be.php 第 16 行.
+NOTIC: [8] Use of undefined constant option_value - assumed 'option_value' D:\Apache\htdocs\tbk\Tbk\Runtime\Cache\Home\31c734afd87e76df000e81f187e3e6be.php 第 17 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\Apache\htdocs\tbk\Tbk\Runtime\Cache\Home\31c734afd87e76df000e81f187e3e6be.php 第 26 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\Apache\htdocs\tbk\Tbk\Runtime\Cache\Home\31c734afd87e76df000e81f187e3e6be.php 第 26 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\Apache\htdocs\tbk\Tbk\Runtime\Cache\Home\31c734afd87e76df000e81f187e3e6be.php 第 26 行.
+NOTIC: [8] Use of undefined constant option_value - assumed 'option_value' D:\Apache\htdocs\tbk\Tbk\Runtime\Cache\Home\31c734afd87e76df000e81f187e3e6be.php 第 33 行.
+NOTIC: [8] Use of undefined constant option_value - assumed 'option_value' D:\Apache\htdocs\tbk\Tbk\Runtime\Cache\Home\31c734afd87e76df000e81f187e3e6be.php 第 34 行.
+NOTIC: [8] Use of undefined constant num_iid - assumed 'num_iid' D:\Apache\htdocs\tbk\Tbk\Runtime\Cache\Home\31c734afd87e76df000e81f187e3e6be.php 第 43 行.
+NOTIC: [8] Use of undefined constant num_iid - assumed 'num_iid' D:\Apache\htdocs\tbk\Tbk\Runtime\Cache\Home\31c734afd87e76df000e81f187e3e6be.php 第 43 行.
+NOTIC: [8] Use of undefined constant num_iid - assumed 'num_iid' D:\Apache\htdocs\tbk\Tbk\Runtime\Cache\Home\31c734afd87e76df000e81f187e3e6be.php 第 43 行.
+NOTIC: [8] Use of undefined constant num_iid - assumed 'num_iid' D:\Apache\htdocs\tbk\Tbk\Runtime\Cache\Home\31c734afd87e76df000e81f187e3e6be.php 第 43 行.
+NOTIC: [8] Use of undefined constant num_iid - assumed 'num_iid' D:\Apache\htdocs\tbk\Tbk\Runtime\Cache\Home\31c734afd87e76df000e81f187e3e6be.php 第 43 行.
+NOTIC: [8] Use of undefined constant num_iid - assumed 'num_iid' D:\Apache\htdocs\tbk\Tbk\Runtime\Cache\Home\31c734afd87e76df000e81f187e3e6be.php 第 43 行.
+NOTIC: [8] Use of undefined constant num_iid - assumed 'num_iid' D:\Apache\htdocs\tbk\Tbk\Runtime\Cache\Home\31c734afd87e76df000e81f187e3e6be.php 第 43 行.
+NOTIC: [8] Use of undefined constant num_iid - assumed 'num_iid' D:\Apache\htdocs\tbk\Tbk\Runtime\Cache\Home\31c734afd87e76df000e81f187e3e6be.php 第 43 行.
+NOTIC: [8] Use of undefined constant num_iid - assumed 'num_iid' D:\Apache\htdocs\tbk\Tbk\Runtime\Cache\Home\31c734afd87e76df000e81f187e3e6be.php 第 43 行.
+NOTIC: [8] Use of undefined constant num_iid - assumed 'num_iid' D:\Apache\htdocs\tbk\Tbk\Runtime\Cache\Home\31c734afd87e76df000e81f187e3e6be.php 第 43 行.
+NOTIC: [8] Use of undefined constant num_iid - assumed 'num_iid' D:\Apache\htdocs\tbk\Tbk\Runtime\Cache\Home\31c734afd87e76df000e81f187e3e6be.php 第 43 行.
+NOTIC: [8] Use of undefined constant num_iid - assumed 'num_iid' D:\Apache\htdocs\tbk\Tbk\Runtime\Cache\Home\31c734afd87e76df000e81f187e3e6be.php 第 43 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.103698s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.103792s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.012521s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.012618s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.006126s ]
+INFO: [ app_end ] --END-- [ RunTime:0.006269s ]
+
+[ 2016-12-28T00:19:14+08:00 ] 127.0.0.1 /Tbk/index.php/Home/index/menu/ID/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000605s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000665s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000749s ]
+SQL: SHOW COLUMNS FROM `tbk_menu` [ RunTime:0.0120s ]
+SQL: SELECT `label` FROM `tbk_menu` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `tbk_tbkitem` [ RunTime:0.0044s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tbk_tbkitem` WHERE ( title like '%1元%' ) LIMIT 1   [ RunTime:0.0601s ]
+SQL: SELECT * FROM `tbk_tbkitem` WHERE ( title like '%1元%' ) LIMIT 0,12   [ RunTime:0.0012s ]
+SQL: SELECT * FROM `tbk_menu` WHERE ( 1=1 and parentid=0 and  cid =0 and status=1 )  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `tbk_options` [ RunTime:0.0038s ]
+SQL: SELECT * FROM `tbk_options` WHERE ( autoload='yes' )  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000106s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000221s ]
+NOTIC: [8] Use of undefined constant option_value - assumed 'option_value' D:\Apache\htdocs\tbk\Tbk\Runtime\Cache\Home\31c734afd87e76df000e81f187e3e6be.php 第 15 行.
+NOTIC: [8] Use of undefined constant option_value - assumed 'option_value' D:\Apache\htdocs\tbk\Tbk\Runtime\Cache\Home\31c734afd87e76df000e81f187e3e6be.php 第 16 行.
+NOTIC: [8] Use of undefined constant option_value - assumed 'option_value' D:\Apache\htdocs\tbk\Tbk\Runtime\Cache\Home\31c734afd87e76df000e81f187e3e6be.php 第 17 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\Apache\htdocs\tbk\Tbk\Runtime\Cache\Home\31c734afd87e76df000e81f187e3e6be.php 第 26 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\Apache\htdocs\tbk\Tbk\Runtime\Cache\Home\31c734afd87e76df000e81f187e3e6be.php 第 26 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\Apache\htdocs\tbk\Tbk\Runtime\Cache\Home\31c734afd87e76df000e81f187e3e6be.php 第 26 行.
+NOTIC: [8] Use of undefined constant option_value - assumed 'option_value' D:\Apache\htdocs\tbk\Tbk\Runtime\Cache\Home\31c734afd87e76df000e81f187e3e6be.php 第 33 行.
+NOTIC: [8] Use of undefined constant option_value - assumed 'option_value' D:\Apache\htdocs\tbk\Tbk\Runtime\Cache\Home\31c734afd87e76df000e81f187e3e6be.php 第 34 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014310s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014383s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000282s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000338s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000702s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000766s ]
+
+[ 2016-12-28T00:19:16+08:00 ] 127.0.0.1 /Tbk/index.php/Home/index/menu/ID/2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000441s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000647s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000716s ]
+SQL: SHOW COLUMNS FROM `tbk_menu` [ RunTime:0.0038s ]
+SQL: SELECT `label` FROM `tbk_menu` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `tbk_tbkitem` [ RunTime:0.0043s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tbk_tbkitem` WHERE ( title like '%女装%' ) LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT * FROM `tbk_tbkitem` WHERE ( title like '%女装%' ) LIMIT 0,12   [ RunTime:0.0011s ]
+SQL: SELECT * FROM `tbk_menu` WHERE ( 1=1 and parentid=0 and  cid =0 and status=1 )  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `tbk_options` [ RunTime:0.0043s ]
+SQL: SELECT * FROM `tbk_options` WHERE ( autoload='yes' )  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000112s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000247s ]
+NOTIC: [8] Use of undefined constant option_value - assumed 'option_value' D:\Apache\htdocs\tbk\Tbk\Runtime\Cache\Home\31c734afd87e76df000e81f187e3e6be.php 第 15 行.
+NOTIC: [8] Use of undefined constant option_value - assumed 'option_value' D:\Apache\htdocs\tbk\Tbk\Runtime\Cache\Home\31c734afd87e76df000e81f187e3e6be.php 第 16 行.
+NOTIC: [8] Use of undefined constant option_value - assumed 'option_value' D:\Apache\htdocs\tbk\Tbk\Runtime\Cache\Home\31c734afd87e76df000e81f187e3e6be.php 第 17 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\Apache\htdocs\tbk\Tbk\Runtime\Cache\Home\31c734afd87e76df000e81f187e3e6be.php 第 26 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\Apache\htdocs\tbk\Tbk\Runtime\Cache\Home\31c734afd87e76df000e81f187e3e6be.php 第 26 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\Apache\htdocs\tbk\Tbk\Runtime\Cache\Home\31c734afd87e76df000e81f187e3e6be.php 第 26 行.
+NOTIC: [8] Use of undefined constant option_value - assumed 'option_value' D:\Apache\htdocs\tbk\Tbk\Runtime\Cache\Home\31c734afd87e76df000e81f187e3e6be.php 第 33 行.
+NOTIC: [8] Use of undefined constant option_value - assumed 'option_value' D:\Apache\htdocs\tbk\Tbk\Runtime\Cache\Home\31c734afd87e76df000e81f187e3e6be.php 第 34 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016581s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016670s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000385s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000463s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000960s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001044s ]
+
+[ 2016-12-28T00:19:18+08:00 ] 127.0.0.1 /Tbk/index.php/Home/index/menu/ID/3.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000615s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000912s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001039s ]
+SQL: SHOW COLUMNS FROM `tbk_menu` [ RunTime:0.0040s ]
+SQL: SELECT `label` FROM `tbk_menu` WHERE ( id=3 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `tbk_tbkitem` [ RunTime:0.0053s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tbk_tbkitem` WHERE ( title like '%美食%' ) LIMIT 1   [ RunTime:0.0009s ]
+SQL: SELECT * FROM `tbk_tbkitem` WHERE ( title like '%美食%' ) LIMIT 0,12   [ RunTime:0.0011s ]
+SQL: SELECT * FROM `tbk_menu` WHERE ( 1=1 and parentid=0 and  cid =0 and status=1 )  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `tbk_options` [ RunTime:0.0035s ]
+SQL: SELECT * FROM `tbk_options` WHERE ( autoload='yes' )  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000104s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000219s ]
+NOTIC: [8] Use of undefined constant option_value - assumed 'option_value' D:\Apache\htdocs\tbk\Tbk\Runtime\Cache\Home\31c734afd87e76df000e81f187e3e6be.php 第 15 行.
+NOTIC: [8] Use of undefined constant option_value - assumed 'option_value' D:\Apache\htdocs\tbk\Tbk\Runtime\Cache\Home\31c734afd87e76df000e81f187e3e6be.php 第 16 行.
+NOTIC: [8] Use of undefined constant option_value - assumed 'option_value' D:\Apache\htdocs\tbk\Tbk\Runtime\Cache\Home\31c734afd87e76df000e81f187e3e6be.php 第 17 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\Apache\htdocs\tbk\Tbk\Runtime\Cache\Home\31c734afd87e76df000e81f187e3e6be.php 第 26 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\Apache\htdocs\tbk\Tbk\Runtime\Cache\Home\31c734afd87e76df000e81f187e3e6be.php 第 26 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\Apache\htdocs\tbk\Tbk\Runtime\Cache\Home\31c734afd87e76df000e81f187e3e6be.php 第 26 行.
+NOTIC: [8] Use of undefined constant option_value - assumed 'option_value' D:\Apache\htdocs\tbk\Tbk\Runtime\Cache\Home\31c734afd87e76df000e81f187e3e6be.php 第 33 行.
+NOTIC: [8] Use of undefined constant option_value - assumed 'option_value' D:\Apache\htdocs\tbk\Tbk\Runtime\Cache\Home\31c734afd87e76df000e81f187e3e6be.php 第 34 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014515s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014594s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000368s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000440s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000995s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001096s ]
+
+[ 2016-12-28T00:19:19+08:00 ] 127.0.0.1 /Tbk/index.php/Home/index/menu/ID/2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000442s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000856s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000924s ]
+SQL: SHOW COLUMNS FROM `tbk_menu` [ RunTime:0.0042s ]
+SQL: SELECT `label` FROM `tbk_menu` WHERE ( id=2 ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `tbk_tbkitem` [ RunTime:0.0041s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tbk_tbkitem` WHERE ( title like '%女装%' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `tbk_tbkitem` WHERE ( title like '%女装%' ) LIMIT 0,12   [ RunTime:0.0011s ]
+SQL: SELECT * FROM `tbk_menu` WHERE ( 1=1 and parentid=0 and  cid =0 and status=1 )  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `tbk_options` [ RunTime:0.0037s ]
+SQL: SELECT * FROM `tbk_options` WHERE ( autoload='yes' )  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000071s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000160s ]
+NOTIC: [8] Use of undefined constant option_value - assumed 'option_value' D:\Apache\htdocs\tbk\Tbk\Runtime\Cache\Home\31c734afd87e76df000e81f187e3e6be.php 第 15 行.
+NOTIC: [8] Use of undefined constant option_value - assumed 'option_value' D:\Apache\htdocs\tbk\Tbk\Runtime\Cache\Home\31c734afd87e76df000e81f187e3e6be.php 第 16 行.
+NOTIC: [8] Use of undefined constant option_value - assumed 'option_value' D:\Apache\htdocs\tbk\Tbk\Runtime\Cache\Home\31c734afd87e76df000e81f187e3e6be.php 第 17 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\Apache\htdocs\tbk\Tbk\Runtime\Cache\Home\31c734afd87e76df000e81f187e3e6be.php 第 26 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\Apache\htdocs\tbk\Tbk\Runtime\Cache\Home\31c734afd87e76df000e81f187e3e6be.php 第 26 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\Apache\htdocs\tbk\Tbk\Runtime\Cache\Home\31c734afd87e76df000e81f187e3e6be.php 第 26 行.
+NOTIC: [8] Use of undefined constant option_value - assumed 'option_value' D:\Apache\htdocs\tbk\Tbk\Runtime\Cache\Home\31c734afd87e76df000e81f187e3e6be.php 第 33 行.
+NOTIC: [8] Use of undefined constant option_value - assumed 'option_value' D:\Apache\htdocs\tbk\Tbk\Runtime\Cache\Home\31c734afd87e76df000e81f187e3e6be.php 第 34 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015243s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015334s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000437s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000522s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001080s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001221s ]
+
+[ 2016-12-28T00:19:27+08:00 ] 127.0.0.1 /Tbk/index.php/Home/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000758s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001058s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001203s ]
+SQL: SHOW COLUMNS FROM `tbk_menu` [ RunTime:0.0039s ]
+SQL: SELECT * FROM `tbk_menu` WHERE ( 1=1 and parentid=0 and  cid =0 and status=1 )  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `tbk_options` [ RunTime:0.0036s ]
+SQL: SELECT * FROM `tbk_options` WHERE ( autoload='yes' )  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `tbk_tbkitem` [ RunTime:0.0046s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tbk_tbkitem` LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `tbk_tbkitem` LIMIT 0,12   [ RunTime:0.0008s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000074s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000185s ]
+NOTIC: [8] Use of undefined constant option_value - assumed 'option_value' D:\Apache\htdocs\tbk\Tbk\Runtime\Cache\Home\31c734afd87e76df000e81f187e3e6be.php 第 15 行.
+NOTIC: [8] Use of undefined constant option_value - assumed 'option_value' D:\Apache\htdocs\tbk\Tbk\Runtime\Cache\Home\31c734afd87e76df000e81f187e3e6be.php 第 16 行.
+NOTIC: [8] Use of undefined constant option_value - assumed 'option_value' D:\Apache\htdocs\tbk\Tbk\Runtime\Cache\Home\31c734afd87e76df000e81f187e3e6be.php 第 17 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\Apache\htdocs\tbk\Tbk\Runtime\Cache\Home\31c734afd87e76df000e81f187e3e6be.php 第 26 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\Apache\htdocs\tbk\Tbk\Runtime\Cache\Home\31c734afd87e76df000e81f187e3e6be.php 第 26 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\Apache\htdocs\tbk\Tbk\Runtime\Cache\Home\31c734afd87e76df000e81f187e3e6be.php 第 26 行.
+NOTIC: [8] Use of undefined constant option_value - assumed 'option_value' D:\Apache\htdocs\tbk\Tbk\Runtime\Cache\Home\31c734afd87e76df000e81f187e3e6be.php 第 33 行.
+NOTIC: [8] Use of undefined constant option_value - assumed 'option_value' D:\Apache\htdocs\tbk\Tbk\Runtime\Cache\Home\31c734afd87e76df000e81f187e3e6be.php 第 34 行.
+NOTIC: [8] Use of undefined constant num_iid - assumed 'num_iid' D:\Apache\htdocs\tbk\Tbk\Runtime\Cache\Home\31c734afd87e76df000e81f187e3e6be.php 第 43 行.
+NOTIC: [8] Use of undefined constant num_iid - assumed 'num_iid' D:\Apache\htdocs\tbk\Tbk\Runtime\Cache\Home\31c734afd87e76df000e81f187e3e6be.php 第 43 行.
+NOTIC: [8] Use of undefined constant num_iid - assumed 'num_iid' D:\Apache\htdocs\tbk\Tbk\Runtime\Cache\Home\31c734afd87e76df000e81f187e3e6be.php 第 43 行.
+NOTIC: [8] Use of undefined constant num_iid - assumed 'num_iid' D:\Apache\htdocs\tbk\Tbk\Runtime\Cache\Home\31c734afd87e76df000e81f187e3e6be.php 第 43 行.
+NOTIC: [8] Use of undefined constant num_iid - assumed 'num_iid' D:\Apache\htdocs\tbk\Tbk\Runtime\Cache\Home\31c734afd87e76df000e81f187e3e6be.php 第 43 行.
+NOTIC: [8] Use of undefined constant num_iid - assumed 'num_iid' D:\Apache\htdocs\tbk\Tbk\Runtime\Cache\Home\31c734afd87e76df000e81f187e3e6be.php 第 43 行.
+NOTIC: [8] Use of undefined constant num_iid - assumed 'num_iid' D:\Apache\htdocs\tbk\Tbk\Runtime\Cache\Home\31c734afd87e76df000e81f187e3e6be.php 第 43 行.
+NOTIC: [8] Use of undefined constant num_iid - assumed 'num_iid' D:\Apache\htdocs\tbk\Tbk\Runtime\Cache\Home\31c734afd87e76df000e81f187e3e6be.php 第 43 行.
+NOTIC: [8] Use of undefined constant num_iid - assumed 'num_iid' D:\Apache\htdocs\tbk\Tbk\Runtime\Cache\Home\31c734afd87e76df000e81f187e3e6be.php 第 43 行.
+NOTIC: [8] Use of undefined constant num_iid - assumed 'num_iid' D:\Apache\htdocs\tbk\Tbk\Runtime\Cache\Home\31c734afd87e76df000e81f187e3e6be.php 第 43 行.
+NOTIC: [8] Use of undefined constant num_iid - assumed 'num_iid' D:\Apache\htdocs\tbk\Tbk\Runtime\Cache\Home\31c734afd87e76df000e81f187e3e6be.php 第 43 行.
+NOTIC: [8] Use of undefined constant num_iid - assumed 'num_iid' D:\Apache\htdocs\tbk\Tbk\Runtime\Cache\Home\31c734afd87e76df000e81f187e3e6be.php 第 43 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017522s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017615s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000346s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000403s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000973s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001053s ]
+
+[ 2016-12-28T00:19:37+08:00 ] 127.0.0.1 /Tbk/index.php/Home/Title/index/ID/10335734844.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000468s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000650s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000715s ]
+SQL: SHOW COLUMNS FROM `tbk_options` [ RunTime:0.0034s ]
+SQL: SELECT * FROM `tbk_options` WHERE ( autoload='yes' )  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `tbk_tbkitem` [ RunTime:0.0041s ]
+SQL: SELECT * FROM `tbk_tbkitem` WHERE ( num_iid like '%10335734844%' )  [ RunTime:0.0018s ]
+NOTIC: [8] Undefined variable: show D:\Apache\htdocs\tbk\Tbk\Home\Controller\BaseController.class.php 第 97 行.
+SQL: SHOW COLUMNS FROM `tbk_menu` [ RunTime:0.0038s ]
+SQL: SELECT * FROM `tbk_menu` WHERE ( 1=1 and parentid=0 and  cid =0 and status=1 )  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000142s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000262s ]
+NOTIC: [8] Use of undefined constant option_value - assumed 'option_value' D:\Apache\htdocs\tbk\Tbk\Runtime\Cache\Home\b58b63edc61829bdf26d5cd78f681476.php 第 15 行.
+NOTIC: [8] Use of undefined constant option_value - assumed 'option_value' D:\Apache\htdocs\tbk\Tbk\Runtime\Cache\Home\b58b63edc61829bdf26d5cd78f681476.php 第 16 行.
+NOTIC: [8] Use of undefined constant option_value - assumed 'option_value' D:\Apache\htdocs\tbk\Tbk\Runtime\Cache\Home\b58b63edc61829bdf26d5cd78f681476.php 第 17 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\Apache\htdocs\tbk\Tbk\Runtime\Cache\Home\b58b63edc61829bdf26d5cd78f681476.php 第 26 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\Apache\htdocs\tbk\Tbk\Runtime\Cache\Home\b58b63edc61829bdf26d5cd78f681476.php 第 26 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\Apache\htdocs\tbk\Tbk\Runtime\Cache\Home\b58b63edc61829bdf26d5cd78f681476.php 第 26 行.
+NOTIC: [8] Use of undefined constant option_value - assumed 'option_value' D:\Apache\htdocs\tbk\Tbk\Runtime\Cache\Home\b58b63edc61829bdf26d5cd78f681476.php 第 33 行.
+NOTIC: [8] Use of undefined constant option_value - assumed 'option_value' D:\Apache\htdocs\tbk\Tbk\Runtime\Cache\Home\b58b63edc61829bdf26d5cd78f681476.php 第 34 行.
+NOTIC: [8] Use of undefined constant num_iid - assumed 'num_iid' D:\Apache\htdocs\tbk\Tbk\Runtime\Cache\Home\b58b63edc61829bdf26d5cd78f681476.php 第 42 行.
+NOTIC: [8] Undefined variable: comments D:\Apache\htdocs\tbk\Tbk\Runtime\Cache\Home\b58b63edc61829bdf26d5cd78f681476.php 第 60 行.
+NOTIC: [8] Undefined variable: comment D:\Apache\htdocs\tbk\Tbk\Runtime\Cache\Home\b58b63edc61829bdf26d5cd78f681476.php 第 77 行.
+NOTIC: [8] Undefined variable: user D:\Apache\htdocs\tbk\Tbk\Runtime\Cache\Home\b58b63edc61829bdf26d5cd78f681476.php 第 77 行.
+NOTIC: [8] Undefined variable: comment D:\Apache\htdocs\tbk\Tbk\Runtime\Cache\Home\b58b63edc61829bdf26d5cd78f681476.php 第 79 行.
+NOTIC: [8] Undefined variable: user D:\Apache\htdocs\tbk\Tbk\Runtime\Cache\Home\b58b63edc61829bdf26d5cd78f681476.php 第 86 行.
+NOTIC: [8] Undefined variable: comment D:\Apache\htdocs\tbk\Tbk\Runtime\Cache\Home\b58b63edc61829bdf26d5cd78f681476.php 第 92 行.
+NOTIC: [8] Undefined variable: user D:\Apache\htdocs\tbk\Tbk\Runtime\Cache\Home\b58b63edc61829bdf26d5cd78f681476.php 第 96 行.
+NOTIC: [8] Undefined index: id D:\Apache\htdocs\tbk\Tbk\Runtime\Cache\Home\b58b63edc61829bdf26d5cd78f681476.php 第 97 行.
+NOTIC: [8] Undefined index: post_title D:\Apache\htdocs\tbk\Tbk\Runtime\Cache\Home\b58b63edc61829bdf26d5cd78f681476.php 第 98 行.
+NOTIC: [8] Undefined index: post_title D:\Apache\htdocs\tbk\Tbk\Runtime\Cache\Home\b58b63edc61829bdf26d5cd78f681476.php 第 99 行.
+NOTIC: [8] Undefined variable: hot D:\Apache\htdocs\tbk\Tbk\Runtime\Cache\Home\b58b63edc61829bdf26d5cd78f681476.php 第 118 行.
+NOTIC: [8] Undefined variable: update D:\Apache\htdocs\tbk\Tbk\Runtime\Cache\Home\b58b63edc61829bdf26d5cd78f681476.php 第 126 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.024294s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024372s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000382s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000442s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000722s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000780s ]
+

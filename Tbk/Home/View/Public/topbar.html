@@ -1,0 +1,8 @@
+<nav class="blog-nav">
+<a class= "blog-nav-item" href="/"><span>首页</span>
+ </a>
+ <foreach name="sidebar" item="sidebar">
+ <a class= "blog-nav-item" href="{:U('index/menu',array('ID'=>$sidebar[id]))}"><span>{$sidebar.label}</span>
+ </a>
+ </foreach>
+</nav>

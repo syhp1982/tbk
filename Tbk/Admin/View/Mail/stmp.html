@@ -1,0 +1,87 @@
+<extend name="Public:main" />
+<block name="main">
+<h1 class="page-header">STMP设置</h1>
+<ul class="nav nav-tabs" role="tablist" id="myTab">
+	<li role="presentation" class="active"><a data-toggle="tab" href="#home" aria-controls="home" role="tab">STMP设置</a></li>
+	<li role="presentation"><a data-toggle="tab" href="#mode" aria-controls="mode" role="tab">邮件模版</a></li>
+</ul>
+<div class="tab-content">
+	<div role="tabpanel" class="tab-pane fade in active" id="home">
+		<form method="post" action="{:U('Admin/doedit')}" enctype="multipart/form-data" class="form-horizontal">
+			<div class="form-group">
+				<label for="blogname" class="col-sm-2 control-label">SMTP服务器 </label>
+				<div class="col-sm-10">
+					<input type="text" placeholder="SMTP服务器" class="form-control" id="blogname" name="blogname" required value="{$options_info.blogname}" />
+				</div>
+			</div>
+			<div class="form-group">
+				<label for="blogname" class="col-sm-2 control-label">端口</label>
+				<div class="col-sm-10">
+					<input type="text" placeholder="SMTP服务器端口" class="form-control" id="blogname" name="blogname" required value="{$options_info.blogname}" />
+				</div>
+			</div>
+			<div class="form-group">
+				<label for="blogname" class="col-sm-2 control-label">用户邮箱</label>
+				<div class="col-sm-10">
+					<input type="text" placeholder="用户邮箱" class="form-control" id="blogname" name="blogname" required value="{$options_info.blogname}" />
+				</div>
+			</div>
+			<div class="form-group">
+				<label for="blogname" class="col-sm-2 control-label">用户帐号</label>
+				<div class="col-sm-10">
+					<input type="text" placeholder="用户帐号" class="form-control" id="blogname" name="blogname" required value="{$options_info.blogname}" />
+				</div>
+			</div>
+			<div class="form-group">
+				<label for="blogname" class="col-sm-2 control-label">用户密码</label>
+				<div class="col-sm-10">
+					<input type="text" placeholder="用户密码" class="form-control" id="blogname" name="blogname" required value="{$options_info.blogname}" />
+				</div>
+			</div>
+			<div class="form-group">
+				<label for="blogname" class="col-sm-2 control-label">邮件通知</label>
+				<div class="col-sm-10">
+					<label class="radio-inline"> <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="1"> 是
+					</label> <label class="radio-inline"> <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="2"> 否
+					</label>
+				</div>
+			</div>
+			<div class="form-group">
+				<div class="col-sm-offset-2 col-sm-10">
+					<button type="submit" class="btn btn-primary">
+						<i class="icon-ok"></i>保存
+					</button>
+				</div>
+			</div>
+		</form>
+	</div>
+
+	<div role="tabpanel" class="tab-pane fade" id="mode">
+		<form method="post" action="" enctype="multipart/form-data" class="form-horizontal">
+			<div class="form-group"></div>
+			<div class="form-group">
+				<label for="mailname" class="col-sm-2 control-label">邮件标题</label>
+				<div class="col-sm-10">
+					<input type="text" placeholder="邮件标题" class="form-control" id="mailname" name="mailname" required value="{$options_info.mailname}" />
+				</div>
+			</div>
+			<div class="form-group">
+				<label class="radio-inline"> <script id="editor" type="text/plain" style="width: 1024px; height: 500px;"></script>
+				</label>
+			</div>
+			<div class="form-group">
+				<div class="col-sm-offset-2 col-sm-10">
+					<button type="submit" class="btn btn-primary">
+						<i class="icon-ok"></i>保存
+					</button>
+				</div>
+			</div>
+		</form>
+	</div>
+</div>
+
+<script type="text/javascript">
+	$(function() {
+		var ue = UE.getEditor('editor');
+	})
+</script> </block>

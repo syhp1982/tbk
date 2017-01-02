@@ -1,0 +1,97 @@
+<extend name="Public:main" />
+<block name="main">
+<h1 class="page-header">{$page_title}</h1>
+<div class="tab-content">
+	<div role="tabpanel" class="tab-pane fade in active" id="home">
+		<form method="post" action="{:U('User/doedit',array('ID'=>$user2[id]))}" enctype="multipart/form-data" class="form-horizontal">
+			<input type="text" placeholder="ID" class="sr-only " id="ID" name="ID" required value="{$user2.id}" disabled />
+			<div class="form-group">
+				<div class="col-sm-7">
+					<label for="user_login" class="col-sm-2 control-label">用户帐号 </label>
+					<div class="col-sm-10">
+						<input type="text" placeholder="用户帐号 " class="col-sm-4 form-control" id="user_login" name="user_login" required value="{$user2.user_login}" disabled />
+					</div>
+
+					<label for="parentid" class="col-sm-2 control-label">昵称</label>
+					<div class="col-sm-10">
+						<input type="text" placeholder="昵称" class="form-control" id="user_nicename" name="user_nicename" required value="{$user2.user_nicename}" />
+					</div>
+				</div>
+				<div class="col-sm-5">
+					<label for="pic" class="col-sm-2 control-label">用户头像</label>
+					<div class="col-sm-4">
+						<img class="img-responsive img-rounded" src="__ROOT__/Public/images/user/{$user1.pic}" alt="" />
+					</div>
+					<div class="col-sm-6">
+						<a class="btn  btn-info" target="mx_list_data" href="/GSP/index.php/Home/Ckrkd/Asset.html">照片</a>
+					</div>
+				</div>
+			</div>
+			<div class="form-group">
+				<div class="col-sm-7">
+					<label for="app" class="col-sm-2 control-label">邮箱</label>
+					<div class="col-sm-10">
+						<input type="email" placeholder="邮箱" class="form-control" id="user_email" name="user_email" required value="{$user2.user_email}" />
+					</div>
+				</div>
+				<div class="col-sm-4">
+					<label for="app" class="col-sm-3 control-label">QQ</label>
+					<div class="col-sm-9">
+						<input type="number" placeholder="QQ号" class="form-control" id="user_qq" name="user_qq" value="{$user2.user_qq}" />
+					</div>
+				</div>
+			</div>
+			<div class="form-group">
+				<div class="col-sm-7">
+					<label for="app" class="col-sm-2 control-label">手机号码</label>
+					<div class="col-sm-10">
+						<input type="tel" placeholder="手机号码" class="form-control" id="user_mobile" name="user_mobile" required value="{$user2.user_mobile}" />
+					</div>
+				</div>
+				<div class="col-sm-4">
+					<label for="app" class="col-sm-3 control-label">性别</label>
+					<div class="col-sm-9">
+						<select class="form-control" name="user_sex">
+							<option value="1"<if condition="$user2.user_sex eq 1">selected</if>>男
+							</option>
+							<option value="0"<if condition="$user2.user_sex eq 0">selected</if>>女
+							</option>
+							<option value="2"<if condition="$user2.user_sex eq 2">selected</if>>保密
+							</option>
+						</select>
+					</div>
+				</div>
+			</div>
+			<div class="form-group">
+				<div class="col-sm-7">
+					<label for="user_status" class="col-sm-2 control-label">状态</label>
+					<div class="col-sm-10">
+						<label class="radio-inline"> <input type="radio" name="user_status" id="user_status" value="1"
+						<if condition="$user2.user_status eq 1">checked</if>> 启用
+						</label> <label class="radio-inline"> <input type="radio" name="status" id="status" value="2"
+						<if condition="$user2.user_status eq 2">checked</if>> 禁用
+						</label>
+					</div>
+				</div>
+				<div class="col-sm-4">
+					<div class="col-sm-offset-2 col-sm-10">
+						<button type="submit" class="btn btn-primary">
+							<i class="icon-ok"></i>保存
+						</button>
+					</div>
+				</div>
+			</div>
+			<div class="form-group">
+				<div class="mx_list">
+					<div id="altContent">
+						<h1>美图秀秀</h1>
+					</div>
+					<div class="mx-popbod dform">
+						<iframe src="" class="list_iframe" name="mx_list_data" width="800" height="350" frameborder="0" scrolling="auto"></iframe>
+					</div>
+				</div>
+			</div>
+		</form>
+	</div>
+</div>
+</block>

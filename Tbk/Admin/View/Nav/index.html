@@ -1,0 +1,91 @@
+<extend name="Public:main" />
+<block name="main">
+<ul class="nav nav-tabs" role="tablist">
+	<li role="presentation" class="active"><a data-toggle="tab" href="#foreground " aria-controls="foreground " role="tab">后台菜单</a></li>
+	<li role="presentation"><a data-toggle="tab" href="#background" aria-controls="background" role="tab">前台菜单</a></li>
+</ul>
+<h1 class="page-header">菜单管理</h1>
+<div class="clearfix">
+	<div class="form-group">
+		<a href="{:U('Nav/nav_add')}">
+			<button type="button" class="btn btn-success">
+				添加<i class="icon-plus"></i>
+			</button>
+		</a>
+	</div>
+</div>
+<div class="tab-content">
+	<div role="tabpanel" class="tab-pane fade in active" id="foreground">
+		<div class="form-group">
+			<table class="table table-bordered table-condensed text-nowrap">
+				<thead>
+					<tr role="row">
+						<th style="width: 24px;" rowspan="1" colspan="1" ><div class="checker">
+								<span><input type="checkbox" class="group-checkable" data-set="#sample_1 .checkboxes"></span>
+							</div></th>
+						<th   rowspan="1" colspan="1" style="width: 169px;">ID</th>
+						<th class="hidden-480 sorting_disabled" role="columnheader" rowspan="1" colspan="1" style="width: 176px;" aria-label="Joined">父级ID</th>
+						<th class="hidden-480 sorting_disabled" role="columnheader" rowspan="1" colspan="1" aria-label="Email" style="width: 298px;">分类名称</th>
+						<th class="hidden-480 sorting" role="columnheader" tabindex="0" aria-controls="sample_1" rowspan="1" colspan="1"
+							aria-label="Points: activate to sort column ascending" style="width: 116px;">状态</th>
+						<th class="hidden-480 sorting_disabled" role="columnheader" rowspan="1" colspan="1" aria-label="Joined" style="width: 176px;">操作</th>
+					</tr>
+				</thead>
+				<tbody>
+					<foreach name="nav1"  item="nav1">
+					<tr>
+						<td class=" sorting_1"><div class="checker">
+								<span><input type="checkbox" class="checkboxes" value="1"></span>
+							</div></td>
+						<td><span>{$nav1.id}</span></td>
+						<td><span><if condition="$nav1.parentid eq 0">/<else />{$nav1.parentid}</if></span></td>
+						<td><span>{$nav1.label}</span></td>
+						<td><span><if condition="$nav1.status eq 1">显示<else />隐藏</if></span></td>
+						<td><span><a href="{:U('Nav/nav_edit',array('ID'=>$nav1[id]))}"><button type="button" class="btn  btn-info">修改</button></a></span>
+						<span><a href="{:U('Nav/nav_del',array('ID'=>$nav1[id]))}"><button type="button" class="btn  btn-warning">删除</button></a></span>
+						</td>
+					</tr>
+					</foreach>
+				</tbody>
+			</table>
+		</div>
+	</div>
+	<div role="tabpanel" class="tab-pane fade"  id="background">
+	<div class="form-group">
+			<table class="table table-bordered table-condensed text-nowrap">
+				<thead>
+					<tr role="row">
+						<th style="width: 24px;" class="sorting_disabled" role="columnheader" rowspan="1" colspan="1" aria-label=""><div class="checker">
+								<span><input type="checkbox" class="group-checkable" data-set="#sample_1 .checkboxes"></span>
+							</div></th>
+						<th class="sorting" role="columnheader" tabindex="0" aria-controls="sample_1" rowspan="1" colspan="1"
+							aria-label="Username: activate to sort column ascending" style="width: 169px;">ID</th>
+						<th class="hidden-480 sorting_disabled" role="columnheader" rowspan="1" colspan="1" style="width: 176px;" aria-label="Joined">父级ID</th>			
+						<th class="hidden-480 sorting_disabled" role="columnheader" rowspan="1" colspan="1" aria-label="Email" style="width: 298px;">分类名称</th>
+						<th class="hidden-480 sorting" role="columnheader" tabindex="0" aria-controls="sample_1" rowspan="1" colspan="1"
+							aria-label="Points: activate to sort column ascending" style="width: 116px;">状态</th>
+						<th class="hidden-480 sorting_disabled" role="columnheader" rowspan="1" colspan="1" aria-label="Joined" style="width: 176px;">操作</th>
+					</tr>
+				</thead>
+				<tbody>
+					<foreach name="nav2" item="nav2">
+					<tr>
+						<td class=" sorting_1"><div class="checker">
+								<span><input type="checkbox" class="checkboxes" value="1"></span>
+							</div></td>
+						<td><span>{$nav2.id}</span></td>
+						<td><span><if condition="$nav.parentid eq 0">/<else />{$nav2.parentid}</if></span></td>
+						<td><span>{$nav2.label}</span></td>
+						<td><span><if condition="$nav2.status eq 1">显示<else />隐藏</if></span></td>
+						<td><span><a href="{:U('Nav/nav_edit',array('ID'=>$nav2[id]))}"><button type="button" class="btn  btn-info">修改</button></a></span>
+						<span><a href="{:U('Nav/nav_del',array('ID'=>$nav2[id]))}"><button type="button" class="btn  btn-warning">删除</button></a></span>
+						</td>
+					</tr>
+					</foreach>
+				</tbody>
+			</table>
+		</div>
+	</div>
+</div>
+	
+</block>

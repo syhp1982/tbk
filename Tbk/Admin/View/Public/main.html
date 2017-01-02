@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+<block name="header"> <include file="Public:header" /> </block>
+<block name="dashboard">
+<link href="__ROOT__/Public/Css/admin/theme.css" rel="stylesheet">
+</block>
+</head>
+<body>
+	<div class="container-fluid" >
+	<div class="row" >
+		<div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+				<block name="main"> </block>			
+		</div>
+	</div>
+	<div class="navbar-fixed-bottom">
+		<block name="footer"> <include file="Public:footer" /> </block>
+	</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,103 @@
+<extend name="Public:main" />
+<block name="main">
+<div class="col-sm-8 blog-main">
+	<div class="blog-post">
+		<foreach name="posts" item="posts">
+		<article class="blog-post">
+			<h2>
+				<a href="{:U('Title/index',array('ID'=>$posts[num_iid]))}"><p>{$posts.title}</p></a>
+			</h2>
+			<p>
+				<img src="{$posts.pict_url}" class="img-responsive center-block" />
+			</p>
+
+			<p>价格：{$posts.reserve_price}元 本月销量：{$posts.volume}</p>
+			<p>
+				优惠券：<a href="{$posts.activity_url}" class="btn btn-success">点击领取</a> 链接：<a href="{$posts.click_short_urls}" class="btn btn-success">点击购买</a>
+			</p>
+			<p>优惠口令：{$posts.click_pw}</p>
+		</article>
+		</foreach>
+	</div>
+	<nav>
+		<ul class="pager">
+			<hr />
+			<div class="media">
+				<h3>评论列表</h3>
+				<foreach name="comments" item="comments">
+				<ul class="media-list">
+					<li class="media"><div class="media-left">
+							<span class="media-object glyphicon glyphicon-user
+glyphicon " aria-hidden="true"></span>
+						</div>
+						<div class="media-body">
+							<h4>{$comments.comment_author}</h4>
+							<small>{$comments.comment_date}</small>
+							<div class="well" style="font-size: 14px;">{$comments.comment_content}</div>
+						</div></li>
+				</ul>
+				</foreach>
+				<hr />
+				<form class="form-horizontal" method="post" action="{:U('Title/do_comment')}">
+					<div class="form-group  ">
+						<label for="comment_author" class="col-sm-2 control-label">昵称</label>
+						<div class="col-sm-6">
+							<h3>
+								<a id="username" href="{$comment.comment_author_url}">{$user.user_nicename}</a>
+							</h3>
+							<input type="text" placeholder="昵称" class="form-control" id="comment_author" name="comment_author" required value="{$comment.comment_author}">
+
+						</div>
+					</div>
+					<div class="form-group ">
+						<label for="mailname" class="col-sm-2 control-label">邮箱 <span class="color-red"></span></label>
+						<div class="col-sm-8">
+							<input type="email" placeholder="邮箱地址" class="form-control" id="comment_author_email" name="comment_author_email" required value="{$user.user_email}">
+						</div>
+					</div>
+					<div class="form-group ">
+						<label for="comment_content" class="col-sm-2 control-label">内容</label>
+						<div class="col-sm-8">
+							<textarea class="form-control" rows="8" id="comment_content" name="comment_content" required value="{$comment.comment_content}"></textarea>
+						</div>
+					</div>
+					<div class="form-group ">
+						<input type="text" class="form-control sr-only" id="comment_author" name="comment_author" value="{$user.user_login}"> <input type="text"
+							class="form-control sr-only" id="comment_post_ID" name="comment_post_ID" value="{$posts.id}"> <input type="text" class="form-control sr-only"
+							id="comment_post_title" name="comment_post_title" value="{$posts.post_title}"> <input type="text" class="form-control sr-only"
+							id="comment_author_url" name="comment_author_url" value="{$posts.post_title}"> <input type="text" class="form-control sr-only"
+							id="comment_parent" name="comment_parent" value="0">
+					</div>
+					<div class="form-group">
+						<div class="col-sm-offset-2 col-sm-10">
+							<button type="submit" class="btn btn-primary">
+								<i class="icon-ok"></i>提交
+							</button>
+						</div>
+					</div>
+				</form>
+			</div>
+		</ul>
+	</nav>
+</div>
+<div class="col-sm-3 col-sm-offset-1 blog-sidebar">
+	<div class="sidebar-module">
+		<h4>热门文章</h4>
+		<ol class="list-unstyled">
+			<foreach name="hot" item="hot">
+			<li><a href="{:U('Title/index',array('ID'=>$hot[id]))}">{$hot.post_title}</a></li>
+			</foreach>
+		</ol>
+	</div>
+</div>
+<div class="col-sm-3 col-sm-offset-1 blog-sidebar">
+	<div class="sidebar-module">
+		<h4>最近更新</h4>
+		<ol class="list-unstyled">
+			<foreach name="update" item="update">
+			<li><a href="{:U('Title/index',array('ID'=>$update[id]))}">{$update.post_title}</a></li>
+			</foreach>
+		</ol>
+	</div>
+</div>
+</block>
